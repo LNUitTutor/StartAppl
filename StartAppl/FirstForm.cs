@@ -29,14 +29,7 @@ namespace StartAppl
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
             NumericUpDown numeric = sender as NumericUpDown;
-            switch ((int)numeric.Value)
-            {
-                case 1: label2.Text = "Не з'явився"; break;
-                case 2: label2.Text = "Незадовільно"; break;
-                case 3: label2.Text = "Задовільно"; break;
-                case 4: label2.Text = "Добре"; break;
-                case 5: label2.Text = "Відмінно"; break;
-            }
+            label2.Text = Logic.GetString((int)numeric.Value);
         }
     }
 }
