@@ -8,5 +8,9 @@ namespace StartAppl
 {
     class Logic
     {
+        public static string GetString(int i)
+        {
+            return "Hello, World";
+        }
     }
 }
